@@ -1,0 +1,109 @@
+Quick-Cocos2dx-Community C++ support ready.
+
+------------------------------------------------
+
+LOAD LUA FILE: D:/WGQ/Awork/mushroom/src/main.lua
+
+------------------------------------------------
+
+[LUA-print] ===========================================================
+
+[LUA-print]               LOAD QUICK FRAMEWORK
+
+[LUA-print] ===========================================================
+
+[LUA-print] [INFO] 
+
+[LUA-print] [INFO] # DEBUG                        = 1
+
+[LUA-print] [INFO] #
+
+[LUA-print] [INFO] # device.platform              = windows
+
+[LUA-print] [INFO] # device.model                 = unknown
+
+[LUA-print] [INFO] # device.language              = cn
+
+[LUA-print] [INFO] # device.writablePath          = D:\WGQ\Awork\mushroom\
+
+[LUA-print] [INFO] # device.directorySeparator    = \
+
+[LUA-print] [INFO] # device.pathSeparator         = ;
+
+[LUA-print] [INFO] #
+
+[LUA-print] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_HEIGHT
+
+[LUA-print] [INFO] # CONFIG_SCREEN_WIDTH          = 960.00
+
+[LUA-print] [INFO] # CONFIG_SCREEN_HEIGHT         = 640.00
+
+[LUA-print] [INFO] # display.widthInPixels        = 960.00
+
+[LUA-print] [INFO] # display.heightInPixels       = 640.00
+
+[LUA-print] [INFO] # display.contentScaleFactor   = 1.00
+
+[LUA-print] [INFO] # display.width                = 960.00
+
+[LUA-print] [INFO] # display.height               = 640.00
+
+[LUA-print] [INFO] # display.cx                   = 480.00
+
+[LUA-print] [INFO] # display.cy                   = 320.00
+
+[LUA-print] [INFO] # display.left                 = 0.00
+
+[LUA-print] [INFO] # display.right                = 960.00
+
+[LUA-print] [INFO] # display.top                  = 640.00
+
+[LUA-print] [INFO] # display.bottom               = 0.00
+
+[LUA-print] [INFO] # display.c_left               = -480.00
+
+[LUA-print] [INFO] # display.c_right              = 480.00
+
+[LUA-print] [INFO] # display.c_top                = 320.00
+
+[LUA-print] [INFO] # display.c_bottom             = -320.00
+
+[LUA-print] [INFO] #
+
+[LUA-print] [ERR] display.newSpriteFrame() - invalid frameName mushroom3
+
+[LUA-print] 
+stack traceback:
+	[string "framework/display.lua"]:1592: in function 'newSpriteFrame'
+	[string "framework/display.lua"]:672: in function 'newSprite'
+	[string "framework/cc/ui/UIButton.lua"]:490: in function 'updateButtonImage_'
+	[string "framework/cc/ui/UIButton.lua"]:149: in function 'setButtonImage'
+	[string "framework/cc/ui/UIPushButton.lua"]:82: in function 'setButtonImage'
+	[string "framework/cc/ui/UIPushButton.lua"]:70: in function 'ctor'
+	[string "framework/functions.lua"]:315: in function 'new'
+	[string "D:/WGQ/Awork/mushroom/src/app/scenes/Mushroom.lua"]:77: in function 'ctor'
+	[string "framework/functions.lua"]:315: in function 'new'
+	[string "framework/cc/mvc/AppBase.lua"]:40: in function 'enterScene'
+	[string "D:/WGQ/Awork/mushroom/src/app/MyApp.lua"]:18: in function 'run'
+	[string "D:/WGQ/Awork/mushroom/src/main.lua"]:11: in main chunk
+
+[LUA-print] [ERR] display.newSprite() - create sprite failure, filename #mushroom3
+
+[LUA-print] 
+stack traceback:
+	[string "framework/display.lua"]:706: in function 'newSprite'
+	[string "framework/cc/ui/UIButton.lua"]:490: in function 'updateButtonImage_'
+	[string "framework/cc/ui/UIButton.lua"]:149: in function 'setButtonImage'
+	[string "framework/cc/ui/UIPushButton.lua"]:82: in function 'setButtonImage'
+	[string "framework/cc/ui/UIPushButton.lua"]:70: in function 'ctor'
+	[string "framework/functions.lua"]:315: in function 'new'
+	[string "D:/WGQ/Awork/mushroom/src/app/scenes/Mushroom.lua"]:77: in function 'ctor'
+	[string "framework/functions.lua"]:315: in function 'new'
+	[string "framework/cc/mvc/AppBase.lua"]:40: in function 'enterScene'
+	[string "D:/WGQ/Awork/mushroom/src/app/MyApp.lua"]:18: in function 'run'
+	[string "D:/WGQ/Awork/mushroom/src/main.lua"]:11: in main chunk
+
+[LUA-print] 呵呵一下
+
+[LUA-print] 呵呵一下
+
