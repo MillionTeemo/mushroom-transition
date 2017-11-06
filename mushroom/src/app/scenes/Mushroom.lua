@@ -14,7 +14,6 @@ end)
 function Mushroom:ctor()
 
 
-
     --创建精灵背景
     self.bg=display.newSprite("image/login_bg.png")
     :pos(display.cx, display.cy)
@@ -26,6 +25,7 @@ function Mushroom:ctor()
    self.btn =cc.ui.UIPushButton.new({normal = "#mushroom1.png" , pressed = "#mushroom1.png"})
    :onButtonPressed(function()
         self.btn:setScale(1)
+       self:Animate()
     end)
    :onButtonRelease(function()
         self.btn:setScale(1.5)
@@ -55,7 +55,8 @@ function Mushroom:ctor()
             self.bubbleButton:setButtonEnabled(false)
         end,
         listener = function()
-         print("呵呵一下")
+          print("呵呵一下")
+         app:enterGameScene()
         end,
     })
     :pos(500,500)
@@ -95,6 +96,7 @@ self.scaleBtn =cc.ui.UIPushButton.new({normal = "#mushroom3.png" , pressed = "#m
 self.rotateByBtn =cc.ui.UIPushButton.new({normal = "#mushroom4.png" , pressed = "#mushroom4.png"})
    :onButtonPressed(function()
         self.rotateByBtn:setScale(0.7)
+          os.exit()
     end)
    :onButtonRelease(function()
         self.rotateByBtn:setScale(1.2)
@@ -103,14 +105,8 @@ self.rotateByBtn =cc.ui.UIPushButton.new({normal = "#mushroom4.png" , pressed = 
    :addTo(self.bg)
 
   local move1 =cc.RotateBy:create(0.5,50) 
-  -- local move2 =cc.RotateBy:create(0.5,20) 
-  -- local move3 =cc.RotateBy:create(0.5,30) 
-  -- local move4 =cc.RotateBy:create(0.5,40) 
-  -- local move5 =cc.RotateBy:create(0.5,50) 
-  -- local move6 =cc.RotateBy:create(0.5,60) 
-  -- local move7 =cc.RotateBy:create(0.5,70) 
-  -- local move8 =cc.RotateBy:create(0.5,80) 
-  local squenceAction4= cc.Sequence:create(move1--[[,move2,move3,move4,move5,move6--]])
+ 
+  local squenceAction4= cc.Sequence:create(move1)
   transition.execute(self.rotateByBtn, cc.RepeatForever:create(squenceAction4))
 
 
@@ -118,6 +114,8 @@ self.rotateByBtn =cc.ui.UIPushButton.new({normal = "#mushroom4.png" , pressed = 
 self.scaleByBtn =cc.ui.UIPushButton.new({normal = "#mushroom5.png" , pressed = "#mushroom5.png"})
    :onButtonPressed(function()
         self.scaleByBtn:pos(display.cx+300,display.cy+200)
+        self.scaleByBtn:setScale(1.5)
+        
     end)
    :onButtonRelease(function()
         
@@ -136,6 +134,34 @@ self.scaleByBtn =cc.ui.UIPushButton.new({normal = "#mushroom5.png" , pressed = "
   transition.execute(self.scaleByBtn, cc.RepeatForever:create(squenceAction5)) 
   transition.execute(self.scaleByBtn, cc.RepeatForever:create(squenceAction6)) 
   transition.execute(self.scaleByBtn, cc.RepeatForever:create(squenceAction7))
+
+
+end
+
+function Mushroom:Animate()
+            if self.animate then
+                return
+            end
+
+            self.animate = display.newSprite("image/mushroom7.png")
+            self.animate:align(display.LEFT_BOTTOM, 20, 130)
+            self.animate:addTo(self,1000)
+
+            --加载等待动画帧 
+            local frames = display.newFrames("mushroom%d.png", 1,7)
+            local animation = display.newAnimation(frames, 1 / 7)
+            local ani = cc.Animate:create(animation)
+
+            local function anim()
+                self.animate:removeSelf()
+                self.animate = nil
+            end
+
+            local callfun = cc.CallFunc:create(anim) 
+            local moveto = cc.MoveTo:create(0.1, cc.p(800, 500))
+            local action = cc.Sequence:create(moveto,ani,callfun)  
+            self.animate:runAction(action)
+
 end
 
 function Mushroom:playBgMusic()
@@ -145,6 +171,7 @@ function Mushroom:onEnter()
 end
 
 function Mushroom:onExit()
+
 end
 return Mushroom
 

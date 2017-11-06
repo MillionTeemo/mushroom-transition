@@ -2,7 +2,7 @@ Quick-Cocos2dx-Community C++ support ready.
 
 ------------------------------------------------
 
-LOAD LUA FILE: D:/WGQ/Awork/mushroom/src/main.lua
+LOAD LUA FILE: C:/Users/wgq/Documents/GitHub/mushroom-transition/mushroom/src/main.lua
 
 ------------------------------------------------
 
@@ -24,7 +24,7 @@ LOAD LUA FILE: D:/WGQ/Awork/mushroom/src/main.lua
 
 [LUA-print] [INFO] # device.language              = cn
 
-[LUA-print] [INFO] # device.writablePath          = D:\WGQ\Awork\mushroom\
+[LUA-print] [INFO] # device.writablePath          = C:\Users\wgq\Documents\GitHub\mushroom-transition\mushroom\
 
 [LUA-print] [INFO] # device.directorySeparator    = \
 
@@ -69,41 +69,4 @@ LOAD LUA FILE: D:/WGQ/Awork/mushroom/src/main.lua
 [LUA-print] [INFO] # display.c_bottom             = -320.00
 
 [LUA-print] [INFO] #
-
-[LUA-print] [ERR] display.newSpriteFrame() - invalid frameName mushroom3
-
-[LUA-print] 
-stack traceback:
-	[string "framework/display.lua"]:1592: in function 'newSpriteFrame'
-	[string "framework/display.lua"]:672: in function 'newSprite'
-	[string "framework/cc/ui/UIButton.lua"]:490: in function 'updateButtonImage_'
-	[string "framework/cc/ui/UIButton.lua"]:149: in function 'setButtonImage'
-	[string "framework/cc/ui/UIPushButton.lua"]:82: in function 'setButtonImage'
-	[string "framework/cc/ui/UIPushButton.lua"]:70: in function 'ctor'
-	[string "framework/functions.lua"]:315: in function 'new'
-	[string "D:/WGQ/Awork/mushroom/src/app/scenes/Mushroom.lua"]:77: in function 'ctor'
-	[string "framework/functions.lua"]:315: in function 'new'
-	[string "framework/cc/mvc/AppBase.lua"]:40: in function 'enterScene'
-	[string "D:/WGQ/Awork/mushroom/src/app/MyApp.lua"]:18: in function 'run'
-	[string "D:/WGQ/Awork/mushroom/src/main.lua"]:11: in main chunk
-
-[LUA-print] [ERR] display.newSprite() - create sprite failure, filename #mushroom3
-
-[LUA-print] 
-stack traceback:
-	[string "framework/display.lua"]:706: in function 'newSprite'
-	[string "framework/cc/ui/UIButton.lua"]:490: in function 'updateButtonImage_'
-	[string "framework/cc/ui/UIButton.lua"]:149: in function 'setButtonImage'
-	[string "framework/cc/ui/UIPushButton.lua"]:82: in function 'setButtonImage'
-	[string "framework/cc/ui/UIPushButton.lua"]:70: in function 'ctor'
-	[string "framework/functions.lua"]:315: in function 'new'
-	[string "D:/WGQ/Awork/mushroom/src/app/scenes/Mushroom.lua"]:77: in function 'ctor'
-	[string "framework/functions.lua"]:315: in function 'new'
-	[string "framework/cc/mvc/AppBase.lua"]:40: in function 'enterScene'
-	[string "D:/WGQ/Awork/mushroom/src/app/MyApp.lua"]:18: in function 'run'
-	[string "D:/WGQ/Awork/mushroom/src/main.lua"]:11: in main chunk
-
-[LUA-print] 呵呵一下
-
-[LUA-print] 呵呵一下
 
