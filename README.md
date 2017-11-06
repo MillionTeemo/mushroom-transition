@@ -4,7 +4,7 @@ A simply sample based on Quick-Cocos2dx-Community，help newbie able to quickly 
 
 
 
-工程运行软件：
+工程运行软件：Quick-Cocos2dx-Community
 
 
 
@@ -17,7 +17,6 @@ A simply sample based on Quick-Cocos2dx-Community，help newbie able to quickly 
 安装过程以及环境变量配置这里不做说明，想了解的可以去问度娘。
 
 写此Demo的目地，废话略过。。。
-
 
 
 
