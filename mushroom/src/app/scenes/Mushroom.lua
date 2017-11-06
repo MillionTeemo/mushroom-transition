@@ -74,13 +74,7 @@ function Mushroom:ctor()
     --创建一个按钮
 
 --模仿心跳动画
-self.scaleBtn =cc.ui.UIPushButton.new({normal = "#mushroom3" , pressed = "#mushroom3"})
-   :onButtonPressed(function()
-        self.scaleBtn:setScale(0.7)
-    end)
-   :onButtonRelease(function()
-        self.scaleBtn:setScale(1.2)
-    end)
+self.scaleBtn =cc.ui.UIPushButton.new({normal = "#mushroom3.png" , pressed = "#mushroom3.png"})
    :pos(display.cx+100,display.cy-100)
    :addTo(self.bg)
 
