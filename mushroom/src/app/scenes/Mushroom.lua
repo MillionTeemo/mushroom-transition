@@ -56,7 +56,7 @@ function Mushroom:ctor()
         end,
         listener = function()
           print("呵呵一下")
-         app:enterGameScene()
+         app:enterGameScene("GameScene")
         end,
     })
     :pos(500,500)

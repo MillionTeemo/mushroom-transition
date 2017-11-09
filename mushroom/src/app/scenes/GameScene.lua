@@ -19,7 +19,7 @@ function GameScene:ctor()
     local function callback(ref, type)
         if type == ccui.TouchEventType.ended then
           print("退出")
-        app:enterMushroom()
+        app:enterMushroom("Mushroom")
         end
     end
     backBtn:addTouchEventListener(callback)
